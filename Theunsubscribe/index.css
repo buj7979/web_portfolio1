@@ -1,0 +1,376 @@
+/*노말라이징*/
+body ,ul, li{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body {
+    height:100%;
+    padding-bottom:100%;
+    position:relative;
+    z-index:-1000;
+}
+a {
+    text-decoration:none;
+    color:inherit;
+}
+/*라이브러리*/
+
+.cell {
+    float:left;
+    box-sizing:border-box;
+}
+.cell-right {
+    float:right;
+    box-sizing:border-box;
+}
+/*탑바 작업*/
+.top-bar {
+    position:fixed;
+    width:100%;
+    height:87px;  
+    z-index:100000;
+    background-color:white;
+    top:0;
+}
+.top-menu-bar {
+    width:100%;
+    height:87px;
+}
+.top-bar a {
+    font-size:24.04px;
+    line-height:87px;
+    color:#ff0098;
+    transition:color .5s;
+}
+a > sup {
+    font-size:23.04px;
+}
+.top-bar > .top-menu-bar >.top-bar-left > .left-txt {
+    padding-left:30px;    
+}
+.top-bar > .top-menu-bar >.top-bar-left > .left-txt > a {
+    line-height:65px;
+}
+.top-bar > .top-menu-bar >.top-bar-right > ul > li {
+    padding:0 20px;
+}
+/*메인콘텐츠*/
+
+.main-con {
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    position:relative;
+    font-size:42px;
+}
+.main-con > .main-txt2 {
+    padding-bottom:10px;
+    
+}
+li > a::after {
+    margin-top:-28px;
+    content:"";
+    display:block;
+    height:1px;
+    width:0;
+    background-color:#ff0098;
+    margin-left:auto;
+    transition:width .5s;
+}
+li > a:hover::after {
+    width:100%;
+    margin-left:0;
+}
+.left-txt > a::after {
+    margin-top:-20px;
+    content:"";
+    display:block;
+    height:1px;
+    width:0;
+    background-color:#ff0098;
+    margin-left:auto;
+    transition:width .5s;
+}
+.left-txt > a:hover::after {
+    width:100%;
+    margin-left:0;
+}
+.main-con-bg{
+    width:80%;
+    margin:0 auto;
+    position:relative;   
+    margin-top:200px;
+}
+/* 배경 아이콘 */
+.main-con-bg > img {
+    width:1299px;
+    position:absolute;
+    left:50%;
+    transform:translatex(-50%);
+    z-index:10
+}
+.main-con-bg > svg {
+    top:0;
+    position:absolute;
+    z-index:9;    
+    margin-top:250px;
+    width:120%;
+    left:50%;
+    transform:translatex(-50%);
+}
+/* 메인아이탬 */
+.main-item > img {
+    height:100%;
+    position:absolute;
+    left:50%;
+    transform:translatex(-50%);
+    margin-top:100px;
+}
+.main-item {
+    position:absolute;
+    width:100%;
+    height:70vh;
+    margin:0 auto;
+    top:400px;
+    z-index:300;
+}
+/* 움직이는 아이콘 */
+.move-arrow {
+  width: 10px;
+  height: 10px;
+  background: black;
+  position: relative;
+  animation: fadeMoveDown 1.5s ease;
+  animation-iteration-count: infinite;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes fadeMoveDown
+{ 
+  from { top: 0px;
+    opacity:1;}
+  to { top: 10px;
+    opacity:0;}
+}
+.move-arrow{
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+}
+.move-con {
+    padding-bottom:50px;
+}
+/*전체 섹션*/
+.all-section {
+    background-color:white;
+    width:100%;
+    height:calc(100% - 100vh);
+    top:0;
+    padding-top:280px;
+}
+/* 중간 팻말 작업 */
+.sections {
+    margin-top:200vh;
+    margin-left:30px;
+    margin-right:30px;
+}
+.section {
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+.section > .logo {
+    margin:0 auto;
+}
+.section > .logo > svg{
+    height:500px;
+    width:100%;
+}
+.section > .sign {
+    position:absolute;
+    width:50%;
+    background-color:#ff0098;
+    height:30vw;
+}
+.section > .sign-top {
+    position:absolute;
+    width:50%;
+    background-color:#fafafa;
+    height:30vw;
+    transform: rotate(5deg);
+    transition : transform .5s;
+    transform-origin: top left;
+    z-index:15;
+    border:3px solid #f0f0f0;
+}
+.section > .sign-top.cell-right {
+    right:0;
+}
+.section > .sign.cell-right{
+    right:0;
+}
+/*팻말 내용*/
+.section > .sign-top,.sign {
+    text-align: center;
+    color:white;
+}
+.section > .sign-top{
+    color: black;
+}
+.section > .sign-top > .sign-top-txt-3 {
+    left:50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+}
+.section > .sign-top > .sign-top-txt-1 {
+    clip-path: polygon(50% 0%, 0 43%, 100% 43%);
+    width:10px;
+    height:10px;
+    background-color:black;
+    position:relative;
+    left:50%;
+    transform:translatex(-50%);
+    margin:10px;
+} 
+.section > .sign-top > .sign-top-txt-2{
+    position:relative;
+    left:50%;
+    transform:translatex(-50%);
+    margin:10px;
+    font-size:14px;
+    text-align:center;
+}
+.sign-top-txt-3,.sign-txt-2 {
+    font-size:2.5vw
+}
+.sign > .sign-txt-1 {    
+    position: absolute;
+    left:50%;
+    top:20%;
+    transform: translateX(-50%) translateY(-20%);
+    font-size:1.2vw;
+}
+.sign > .sign-txt-2{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: 20px;
+}
+
+.sign-top {
+    display: none;
+}
+/* 푸터 */
+
+.footer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #ff0098;
+    z-index:-100;
+    top: 0;
+    left: 0;
+    font-size: 10rem;
+}
+.footer > .first-txt {
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translatey(-40%) translatex(-50%);
+    text-align: center;
+}
+
+.footer > .hey {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 20%;
+    left: 50%;
+    transform: translatey(-20%) translatex(-50%);
+    padding-bottom:20px;
+}
+.footer > .input-box {
+    position: relative;
+    width: 45%;
+    top: 55%;
+    left: 50%;
+    transform: translatey(-65%) translatex(-50%);
+    margin-left: -100px;
+}
+.c-form__label {
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.c-form__textbox {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    line-height: 100px;
+    color: #000;
+    outline: none;
+    transition: border 0.3s;
+    width: 100%;
+}
+.c-form__textbox:hover {
+    border-bottom: 2px solid black;
+}
+.footer > .access {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 100%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    line-height: 150px;
+    letter-spacing: -1px;
+    cursor: pointer;
+    transition:transform 0.3s, color 0.3s;
+    top: 50%;
+    left: 50%;
+    margin-left:350px;
+}
+.footer > .access:hover {
+    transform: scale(0.9);
+    color: #ffffff;
+}
+.footer > .copyright {
+    font-size:23px;
+    color:white;
+    letter-spacing:-1px;    
+    position:absolute;
+    bottom:0;
+    padding-bottom:30px;
+    padding-left:30px;
+}
+.footer  > .footer-icon > .cell {
+    float:left;
+}
+.footer  > .footer-icon > .cell > a {
+    font-size:25px;
+    padding-right:30px;
+    color:white;
+    transition:color .3s;
+}
+.footer  > .footer-icon > .cell > a:hover {
+    color:black;
+}
+.footer > .footer-icon {
+    position:absolute;
+    right:0;
+    bottom:0;
+}

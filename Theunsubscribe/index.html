@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>서브크라이브 구현</title>
+    <!-- 폰트 불러오기 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" />
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    
+
+    <!-- 탑바 -->
+    <div class="top-bar">
+        <div class="top-menu-bar row">
+            <div class="top-bar-left cell">
+                <div class="left-txt btn">
+                    <a href="#">
+                        Unsubcribe
+                        <sup>™</sup>
+                    </a></div>
+            </div>
+            <div class="top-bar-right cell-right">
+                <ul class="row">
+                    <li class="cell"><a href="#">About Us</a></li>
+                    <li class="cell"><a href="#">Blog</a></li>
+                    <li class="cell"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-item">
+        <img src="https://www.theunsubscribe.com/images/bottle.png" alt="">
+    </div>
+
+
+    <div class="all-section">
+        <div class="main-con">
+            <div class="main-txt">The Active Ingredient In</div>
+            <div class="main-txt2">Your Active Lifestyle.</div>
+            <div class="move-con">
+                <div class="move-arrow"></div>
+            </div>
+            <div class="main-con-bg">
+                <img src="https://www.theunsubscribe.com/images/bottles.png" alt="">
+                <svg viewBox="0 0 1434 474" fill="none" class="t-home__header-decoration">
+                    <path d="M234 234v-4.2L124.2 120H120v4.2L229.8 234h4.2zM114 114v-4.2L4.2 0H0v4.2L109.8 114h4.2zM354 354v-4.2L244.2 240H240v4.2L349.8 354h4.2zM354 234v-4.2L244.2 120H240v4.2L349.8 234h4.2zM474 234v-4.2L364.2 120H360v4.2L469.8 234h4.2zM234 114v-4.2L124.2 0H120v4.2L229.8 114h4.2zM354 114v-4.2L244.2 0H240v4.2L349.8 114h4.2zM114 234v-4.2L4.2 120H0v4.2L109.8 234h4.2zM234 354v-4.2L124.2 240H120v4.2L229.8 354h4.2zM354 474v-4.2L244.2 360H240v4.2L349.8 474h4.2zM474 114v-4.2L364.2 0H360v4.2L469.8 114h4.2zM714 234v-4.2L604.2 120H600v4.2L709.8 234h4.2zM594 114v-4.2L484.2 0H480v4.2L589.8 114h4.2zM114 474v-4.2L4.2 360H0v4.2L109.8 474h4.2zM114 354v-4.2L4.2 240H0v4.2L109.8 354h4.2zM234 474v-4.2L124.2 360H120v4.2L229.8 474h4.2zM714 114v-4.2L604.2 0H600v4.2L709.8 114h4.2zM474 474v-4.2L364.2 360H360v4.2L469.8 474h4.2zM474 354v-4.2L364.2 240H360v4.2L469.8 354h4.2zM594 354v-4.2L484.2 240H480v4.2L589.8 354h4.2zM594 474v-4.2L484.2 360H480v4.2L589.8 474h4.2zM714 474v-4.2L604.2 360H600v4.2L709.8 474h4.2zM594 234v-4.2L484.2 120H480v4.2L589.8 234h4.2zM714 354v-4.2L604.2 240H600v4.2L709.8 354h4.2zM1074 114v-4.2L964.201 0h-4.2v4.2L1069.8 114h4.2zM954.001 234v-4.2L844.2 120H840v4.2L949.801 234h4.2zM834 114v-4.2L724.2 0H720v4.2L829.8 114h4.2zM1074 234v-4.2L964.201 120h-4.2v4.2L1069.8 234h4.2zM954.001 114v-4.2L844.2 0H840v4.2L949.801 114h4.2zM834 234v-4.2L724.2 120H720v4.2L829.8 234h4.2zM834 474v-4.2L724.2 360H720v4.2L829.8 474h4.2zM834 354v-4.2L724.2 240H720v4.2L829.8 354h4.2zM954.001 474v-4.2L844.2 360H840v4.2L949.801 474h4.2zM1074 354v-4.2L964.201 240h-4.2v4.2L1069.8 354h4.2zM954.001 354v-4.2L844.2 240H840v4.2L949.801 354h4.2zM1074 474v-4.2L964.201 360h-4.2v4.2L1069.8 474h4.2zM1194 114v-4.2L1084.2 0h-4.2v4.2L1189.8 114h4.2zM1194 234v-4.2L1084.2 120h-4.2v4.2L1189.8 234h4.2zM1194 354v-4.2L1084.2 240h-4.2v4.2L1189.8 354h4.2zM1194 474v-4.2L1084.2 360h-4.2v4.2L1189.8 474h4.2zM1314 114v-4.2L1204.2 0h-4.2v4.2L1309.8 114h4.2zM1314 234v-4.2L1204.2 120h-4.2v4.2L1309.8 234h4.2zM1314 354v-4.2L1204.2 240h-4.2v4.2L1309.8 354h4.2zM1314 474v-4.2L1204.2 360h-4.2v4.2L1309.8 474h4.2zM1434 114v-4.2L1324.2 0h-4.2v4.2L1429.8 114h4.2zM1434 234v-4.2L1324.2 120h-4.2v4.2L1429.8 234h4.2zM1434 354v-4.2L1324.2 240h-4.2v4.2L1429.8 354h4.2zM1434 474v-4.2L1324.2 360h-4.2v4.2L1429.8 474h4.2z" fill="#E0E0E0" fill-opacity="0.3"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="sections">
+            <div class="section">
+                <div class="sign-top cell">
+                    <div class="sign-top-txt-1"></div>
+                    <div class="sign-top-txt-2">01</div>
+                    <div class="sign-top-txt-3">Shampoo every day?
+                    <br>
+                    Hair feel like hay?</div>
+                </div>
+                <div class="sign cell">
+                    <div class="sign-txt-1">Amino acids make hair strong
+                    <br>
+                    and soft.</div>
+                    <div class="sign-txt-2">Unsubcribe from
+                    <br>
+                    damaged hair.</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="sign-top cell-right">
+                    <div class="sign-top-txt-1"></div>
+                    <div class="sign-top-txt-2">02</div>
+                    <div class="sign-top-txt-3">Frustrated width
+                    <br>
+                    post-workout hair?</div>
+                </div>
+                <div class="sign cell-right">
+                    <div class="sign-txt-1">Apply our easy foam, blow-
+                    <br>
+                    dry for a fresh (smelling)
+                    <br>
+                    Style!</div>
+                    <div class="sign-txt-2">Unsubcribe from the
+                    <br>
+                    frazzle.</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="logo">
+                    <svg viewBox="0 0 55.5 23.5" class="t-home__mobile-strapline">
+                        <path d="M1.5 6H6V0h1.5v5.75A1.71 1.71 0 015.75 7.5h-4A1.71 1.71 0 010 5.75V0h1.5zM8 9.75A1.71 1.71 0 019.75 8h4a1.71 1.71 0 011.75 1.75v4a1.71 1.71 0 01-1.75 1.75h-4A1.71 1.71 0 018 13.75zM9.75 14h4a.24.24 0 00.25-.25v-4a.24.24 0 00-.25-.25h-4a.24.24 0 00-.25.25v4a.24.24 0 00.25.25zM23.5 14v1.5H16V8h1.5v6zM31.5 14v1.5H24V8h1.5v6zM32 9.75A1.71 1.71 0 0133.75 8h4a1.71 1.71 0 011.75 1.75v4a1.71 1.71 0 01-1.75 1.75h-4A1.71 1.71 0 0132 13.75zM33.75 14h4a.24.24 0 00.25-.25v-4a.24.24 0 00-.25-.25h-4a.24.24 0 00-.25.25v4a.24.24 0 00.25.25zM40 8h1.5v6h.5V9.75a1.75 1.75 0 013.5 0V14h.5V8h1.5v7.5H44V9.75a.25.25 0 00-.5 0v5.75H40zM8 17.76A1.71 1.71 0 019.75 16h4a1.71 1.71 0 011.75 1.75v4a1.71 1.71 0 01-1.75 1.75h-4A1.71 1.71 0 018 21.75zM9.75 22h4a.24.24 0 00.25-.25v-4a.24.24 0 00-.25-.25h-4a.24.24 0 00-.25.25v4a.24.24 0 00.25.25zM17.5 22H22v-6h1.5v5.74a1.71 1.71 0 01-1.75 1.75h-4A1.71 1.71 0 0116 21.75V16h1.5zM24 16h7.5v1.5h-3v6H27v-6h-3zM32 22h3v-4.49h-3V16h7.5v1.5h-3V22h3v1.5H32zM40 16h4a1.61 1.61 0 011.5 1.5V22h.5v-6h1.5v5.74a1.75 1.75 0 01-3.5 0v-4.25h-2.49v6H40zM7.5 12H1.75A1.58 1.58 0 000 13.74v1.75h1.5v-1.75a.24.24 0 01.25-.25H7.5zM2 19.74v.03-.03zM5.75 20H2v1.5h3.75a.24.24 0 01.25.25v1.75h1.5v-1.75A1.71 1.71 0 005.75 20zM49.75 19.5h5.75V18h-6v-.5h6V16h-5.75A1.58 1.58 0 0048 17.76a1.57 1.57 0 001.75 1.74zM49.5 21.5h6V20h-5.75A1.58 1.58 0 0048 21.75a1.58 1.58 0 001.75 1.75h5.75V22h-6z">
+                        </path>
+                        <path d="M5.75 16H0v7.5h1.5v-6H6v.5H2v1.5h3.75a1.75 1.75 0 100-3.49zM14 0v6h-.5V1.5A1.61 1.61 0 0012 0H8v7.5h1.5v-6H12v4.25a1.75 1.75 0 003.5 0V0zM7.5 8H1.75A1.58 1.58 0 000 9.75a1.58 1.58 0 001.75 1.75H7.5V10h-6v-.5h6zM16 3.5h7.5V4H16z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="section">
+                <div class="sign-top cell">
+                    <div class="sign-top-txt-1"></div>
+                    <div class="sign-top-txt-2">03</div>
+                    <div class="sign-top-txt-3">Plan workouts around
+                    <br>
+                    hair styling?</div>
+                </div>
+                <div class="sign cell">
+                    <div class="sign-txt-1">Healthy enzymes balance oils
+                    <br>
+                    and stop smelling scalps.</div>
+                    <div class="sign-txt-2">Unsubscribe from
+                    <br>
+                    skipping the gym.</div>
+                </div>
+            </div>
+            <div class="section ">
+                <div class="sign-top cell-right">
+                    <div class="sign-top-txt-1"></div>
+                    <div class="sign-top-txt-2">04</div>
+                    <div class="sign-top-txt-3">Hair too sweaty
+                    <br>
+                    to go out?</div>
+                </div>
+                <div class="sign cell-right">
+                    <div class="sign-txt-1">Skip the shampoo with our
+                    <br>
+                    simple antibacterial blow and 
+                    <br>
+                    go foam.</div>
+                    <div class="sign-txt-2">Unsubscribe from
+                    <br>
+                    FOMO.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <div class="footer">
+        <div class="hey">
+            <svg viewBox="0 0 23.5 7.5">
+                <path d="M0 0h1.5v3H6V0h1.5v7.5H6v-3H1.5v3H0zM16 0h1.5v2H22V0h1.5v1.75a1.71 1.71 0 01-1.75 1.75H20.5v4H19v-4h-1.25A1.71 1.71 0 0116 1.75zM9.75 3.5h5.75V2h-6v-.5h6V0H9.75A1.58 1.58 0 008 1.75 1.58 1.58 0 009.75 3.5zM9.5 5.5h6V4H9.75A1.58 1.58 0 008 5.75 1.58 1.58 0 009.75 7.5h5.75V6h-6z" fill="#fff"></path>
+            </svg>
+        </div>
+        <div class="first-txt">
+            Sign up to get early access and
+            <br>
+            product updates.
+        </div>
+        <div class="input-box">
+            <label for="email" class="c-form__label">Email</label>
+            <input type="email" id="email" name="email" class="c-form__textbox" placeholder="Your email" required="">
+        </div>
+        <div class="access">Sign up</div>
+        <div class="copyright">© Copyright 2019 Unsubscribe</div>
+        <div class="footer-icon">
+            <div class="cell"> <a href="#"><i class="fab fa-facebook-f"></i></a></div>
+            <div class="cell"><a href="#"><i class="fab fa-twitter"></i></a></div>
+            <div class="cell"><a href="#"><i class="fab fa-instagram"></i></a></div>
+        </div>
+    </div>
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>s
+
+</body>
+
+</html>
