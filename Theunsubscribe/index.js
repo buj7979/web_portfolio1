@@ -22,7 +22,7 @@ $(window).scroll(function() {
     if ( scrollTop < 400) {
         scrollTop = '';
     }
-    else if ( scrollTop > 6500 ) {
+    else if ( scrollTop > 6200 ) {
         scrollTop = '6200';
     }
     
@@ -37,3 +37,7 @@ $('.sign-top').hover(function(){
     },200);
 });
 
+$('.btn').click(function(){
+    var scrollTop = window.scrollY;
+    alert(scrollTop);
+});
